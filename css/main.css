@@ -1,0 +1,12 @@
+.done {
+    text-decoration: line-through;
+}
+#list{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    flex-direction: column;
+}
+.hide {
+    display: none;
+}
