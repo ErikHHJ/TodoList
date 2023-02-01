@@ -7,7 +7,7 @@ todoInput.onkeyup = () => {
     message.innerHTML = todoInput.value.length; 
     if (todoInput.value.length === 18){
         message.style.color = "red";
-        todoInput.value.length = 17;
+        todoInput.value.maxLength = 18;
     } else if (todoInput.value.length < 18){
         message.style.color = "black"
     }
@@ -25,7 +25,7 @@ addTodo.onclick = () => {
         todoList.appendChild(li2);
     } else {
         const li = document.createElement("li")
-    li.innerHTML = `${todoInput.value} <button>Toggle</button>`;
+    li.innerHTML = `${todoInput.value} <button>Done</button>`;
     
     li.onclick = (event) => {
         event.currentTarget.style.color = "red";

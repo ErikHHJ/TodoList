@@ -4,7 +4,7 @@
 #list{
     display: flex;
     gap: 20px;
-    list-style: none;
+    list-style:decimal;
     flex-direction: column;
 }
 .hide {
